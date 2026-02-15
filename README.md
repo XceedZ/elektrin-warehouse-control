@@ -27,5 +27,4 @@ Aplikasi ini dibangun menggunakan **React.js** dan **Tailwind CSS** untuk mendem
 
 ## 🔗 Live Demo
 Aplikasi dapat dicoba langsung melalui link berikut:
-[Link Vercel Kamu Disini]
-# elektrin-warehouse-control
+https://elektrin-web.vercel.app/

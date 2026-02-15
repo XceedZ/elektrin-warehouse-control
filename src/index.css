@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+    @page {
+        size: auto;
+        margin: 25mm 25mm 25mm 25mm;
+    }
+
+    body {
+        visibility: hidden;
+        background-color: white;
+    }
+
+    /* Hide everything */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Show ONLY the printable area and its children */
+    #printable-area,
+    #printable-area * {
+        visibility: visible;
+    }
+
+    #printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-shadow: none !important;
+        /* Ensure the dashed border remains visible */
+        border: 0.125rem dashed #cbd5e1 !important;
+        border-radius: 0.25rem !important;
+    }
+
+    /* Force background colors for print */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
